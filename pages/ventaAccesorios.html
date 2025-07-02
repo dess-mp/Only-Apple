@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Logo (icono) -->
+    <link rel="icon" href="../assets/logo2.ico"/>
+    
+    <title>Servicio Técnico</title>
+
+</head>
+<body>
+    <header class="fixed-top">
+
+        <!-- Navbar -->
+
+        <nav class="container-fluid text-center navbar">
+            <div class="container-fluid row">
+
+                <!-- Boton Desplegable -->
+                <div class="col dropdown d-flex justify-content-start">
+                    <button class="btn" type="button" data-bs-toggle="dropdown">
+                        <a class="bi bi-list" href="#"></a>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="./servicioTecnico.html">Servicio Técnico</a></li>
+                        <li><a class="dropdown-item" href="./ventaEquipos.html">Venta Equipos</a></li>
+                        <li><a class="dropdown-item" href="#">Venta Accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./sobreNosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logo -->
+                <div class="col">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo-nav.png" alt="OnlyApple" width="70">
+                    </a>
+                </div>
+
+                <!-- User + Shop -->
+                <div class="col d-flex justify-content-end">
+                <button class="btn">
+                    <i class="bi bi-person-fill"></i>
+                </button>
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="bi bi-bag-fill"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Contenido del carrito de compras...</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Accesorios -->
+
+    <main>
+        <section class="bg-accesorios d-flex flex-column align-items-start justify-content-center text-start row">
+            <div class="col-11 col-md-5 ps-5">
+                <h2>Elegí el accesorio que más se adapte a vos</h2>
+                <p>Explora nuestra selección de fundas, carteras y cargadores MagSafe diseñados para complementar tu día a día con funcionalidad y elegancia.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Productos -->
+    <section class="mt-5">
+
+        <!-- Título + Buscador -->
+        <div class="row">
+            <div class="container col-4">
+                <h2 class="text-center">Encontra lo que buscas</h2>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar accesorios">
+                </form>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="d-flex flex-wrap justify-content-center text-center">
+
+                <div class="d-flex flex-column align-items-center me-md-4 mb-4">
+                <div class="rounded-img">
+                    <img src="../assets/accesory-icons/macbook.png" alt="Mac">
+                </div>
+                <p class="category-label">Mac</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center me-md-4 mb-4">
+                <div class="rounded-img">
+                    <img src="../assets/accesory-icons/ipad.png" alt="iPad">
+                </div>
+                <p class="category-label">iPad</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center me-md-4 mb-4">
+                <div class="rounded-img">
+                    <img src="../assets/accesory-icons/iphone.png" alt="iPhone">
+                </div>
+                <p class="category-label">iPhone</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center me-md-4 mb-4">
+                <div class="rounded-img">
+                    <img src="../assets/accesory-icons/watch.png" alt="Watch">
+                </div>
+                <p class="category-label">Watch</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center mb-4">
+                <div class="rounded-img">
+                    <img src="../assets/accesory-icons/appletv.png" alt="TV & Home">
+                </div>
+                <p class="category-label">TV & Home</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer-background pt-5 mt-2">
+
+        <div class="row">
+
+            <div class="col-12 col-md-7 ms-md-5 d-flex flex-column align-items-center align-items-md-start">
+
+                <h2>Care for your iPhone</h2>
+
+                <div class="mb-3">
+                    <a class="h4 bi bi-instagram me-2" href="https://www.instagram.com/onlyappleservice?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                    <a class="h4 bi bi-whatsapp" href="https://wa.me/541165875467" target="_blank"></a>
+                </div>
+
+                <a href="./sobreNosotros.html" role="button" class="btn btn-footer btn-sm px-4">Sobre nosotros</a>
+
+            </div>
+
+
+            <div class="col-2 d-none d-md-block">
+
+                <h6><strong>SERVICIOS</strong></h6>
+                <ul class="list-unstyled">
+                    <li><a href="./servicioTecnico.html">Servicio Técnico</a></li>
+                    <li><a href="./ventaEquipos.html">Venta Equipos</a></li>
+                    <li><a href="#">Venta Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="col-2 d-none d-md-block">
+                <h6><strong>CONTACTANOS</strong></h6>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:onlyappleservice@gmail.com" target="_blank">E-mail</a></li>
+                    <li><a href="https://wa.me/541165875467" target="_blank">Celular</a></li>
+                    <li><a href="https://maps.app.goo.gl/of2u7S42WYwgmCbf6"target="_blank">Ubicanos</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="privacy-footer">© 2025 Desiree Moya - CODERHOUSE</p>
+        
+    </footer>
+
+    <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

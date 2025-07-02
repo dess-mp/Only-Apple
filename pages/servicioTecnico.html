@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Logo (icono) -->
+    <link rel="icon" href="../assets/logo2.ico"/>
+    
+    <title>Servicio Técnico</title>
+
+</head>
+<body>
+    <header class="fixed-top">
+
+        <!-- Navbar -->
+
+        <nav class="container-fluid text-center navbar">
+            <div class="container-fluid row">
+
+                <!-- Boton Desplegable -->
+                <div class="col dropdown d-flex justify-content-start">
+                    <button class="btn" type="button" data-bs-toggle="dropdown">
+                        <a class="bi bi-list" href="#"></a>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="#">Servicio Técnico</a></li>
+                        <li><a class="dropdown-item" href="./ventaEquipos.html">Venta Equipos</a></li>
+                        <li><a class="dropdown-item" href="./ventaAccesorios.html">Venta Accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./sobreNosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logo -->
+                <div class="col">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo-nav.png" alt="OnlyApple" width="70">
+                    </a>
+                </div>
+
+                <!-- User + Shop -->
+                <div class="col d-flex justify-content-end">
+                <button class="btn">
+                    <i class="bi bi-person-fill"></i>
+                </button>
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="bi bi-bag-fill"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Contenido del carrito de compras...</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="soporte-background align-items-center justify-content-center text-center">
+
+        <!-- Título -->
+        <div class="mt-5 pt-5 fw-bold">
+            <h2>Presupuesta tu arreglo</h2>
+        </div>
+
+        <!-- Equipos (iPhone, MacBook, Apple Watch) -->
+        <div class="container-fluid pt-3 pb-2 mx-auto">
+            <div class="d-flex justify-content-center gap-5 cards-container">
+
+                <div class="card text-center" style="width: 8rem;border: none; background: none;">
+                    <img src="../assets/soporte-iphone.png" alt="iPhone" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <p class="card-text">iPhone</p>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 10rem; border: none; background: none;">
+                    <img src="../assets/soporte-macbook.png" alt="MacBook" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <p class="card-text">MacBook</p>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 8rem; border: none; background: none;">
+                    <img src="../assets/soporte-applewatch.png" alt="Apple Watch" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <p class="card-text">Watch</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+
+        <!-- Sección Presupuesto -->
+
+        <div class="container mb-2 pb-5 pt-5">
+
+            <div class="row justify-content-center">
+
+                <!-- Equipo + Soporte -->
+
+                <div class="col-12 col-md-6 mb-4">
+
+                    <!-- Equipo -->
+                    <input class="form-control mb-3" list="datalistEquipo" id="equipoSeleccionado" placeholder="Ingrese su modelo...">
+                    <datalist id="datalistEquipo">
+                        <option value="iPhone 14 Pro Max">
+                        <option value="iPhone 13">
+                        <option value="iPhone 12">
+                        <option value="iPhone 11">
+                        <option value="iPhone SE">
+                    </datalist>
+
+                    <!-- Soporte -->
+                    <input class="form-control mb-3" list="datalistSoporte" id="soporteSeleccionado" placeholder="Ingrese su reparación...">
+                    <datalist id="datalistSoporte">
+                        <option value="Cambio de pantalla">
+                        <option value="Cambio de batería">
+                        <option value="Reparación de cámara">
+                        <option value="Reemplazo de pin de carga">
+                        <option value="Reparación de placa base">
+                    </datalist>
+
+                    <!-- Boton Presupuestar -->
+                    <button class="row btn btn-footer btn-lg">Presupuestar</button>
+                </div>
+
+                <!-- Presupuesto -->
+                <div class="col-12 col-md-6 rounded text-center d-grid align-items-center justify-content-center border border-rounded">
+                    <div class="container row justify-content-center">
+                        <div class="col-10">
+                            <h3 class="text-center">Presupuesto</h3>
+                            <p class="text-center">Aquí se mostrará el presupuesto estimado para la reparación de su equipo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-background pt-5 mt-2">
+
+        <div class="row">
+
+            <div class="col-12 col-md-7 ms-md-5 d-flex flex-column align-items-center align-items-md-start">
+
+                <h2>Care for your iPhone</h2>
+
+                <div class="mb-3">
+                    <a class="h4 bi bi-instagram me-2" href="https://www.instagram.com/onlyappleservice?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                    <a class="h4 bi bi-whatsapp" href="https://wa.me/541165875467" target="_blank"></a>
+                </div>
+
+                <a href="./sobreNosotros.html" role="button" class="btn btn-footer btn-sm px-4">Sobre nosotros</a>
+
+            </div>
+
+
+            <div class="col-2 d-none d-md-block">
+
+                <h6><strong>SERVICIOS</strong></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">Servicio Técnico</a></li>
+                    <li><a href="./ventaEquipos.html">Venta Equipos</a></li>
+                    <li><a href="./ventaAccesorios.html">Venta Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="col-2 d-none d-md-block">
+                <h6><strong>CONTACTANOS</strong></h6>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:onlyappleservice@gmail.com" target="_blank">E-mail</a></li>
+                    <li><a href="https://wa.me/541165875467" target="_blank">Celular</a></li>
+                    <li><a href="https://maps.app.goo.gl/of2u7S42WYwgmCbf6"target="_blank">Ubicanos</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="privacy-footer">© 2025 Desiree Moya - CODERHOUSE</p>
+        
+    </footer>
+
+    <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

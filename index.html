@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Logo (icono) -->
+    <link rel="icon" href="./assets/logo2.ico"/>
+    
+    <title>Only Apple</title>
+
+</head>
+<body>
+    <header class="fixed-top">
+
+        <!-- Navbar -->
+
+        <nav class="container-fluid text-center navbar">
+            <div class="container-fluid row">
+
+                <!-- Boton Desplegable -->
+                <div class="col dropdown d-flex justify-content-start">
+                    <button class="btn" type="button" data-bs-toggle="dropdown">
+                        <a class="bi bi-list" href="#"></a>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Inicio</a></li>
+                        <li><a class="dropdown-item" href="./pages/servicioTecnico.html">Servicio Técnico</a></li>
+                        <li><a class="dropdown-item" href="./pages/ventaEquipos.html">Venta Equipos</a></li>
+                        <li><a class="dropdown-item" href="./pages/ventaAccesorios.html">Venta Accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logo -->
+                <div class="col">
+                    <a class="navbar-brand" href="#">
+                    <img src="./assets/logo-nav.png" alt="OnlyApple" width="70">
+                    </a>
+                </div>
+
+
+                <!-- User + Shop -->
+                <div class="col d-flex justify-content-end">
+                <button class="btn">
+                    <i class="bi bi-person-fill"></i>
+                </button>
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="bi bi-bag-fill"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Contenido del carrito de compras...</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Presentación -->
+
+    <main>
+        <section class="row align-items-center bg-main">
+            
+            <!-- Columna del texto -->
+            <div class="col-lg-8 d-flex flex-column justify-content-center p-5 col-texto">
+                <h1>Servicio Técnico</h1>
+                <h6 class="fst-italic">Care for your iPhone</h6>
+                <p>
+                    Contamos con 7 años de experiencia, liderando en servicio técnico y ventas, con un equipo sólido en la materia y el mayor stock y variedad de calidades de repuestos para solucionar cada problema de tu equipo Apple.
+                </p>
+            </div>
+
+            <!-- Columna de la imagen -->
+            <div class="col-lg-4 d-none d-lg-block p-0 ">
+                <img src="./assets/img-cover-presentacion.png" alt="Cover Presentacion" class="img-fluid w-100">
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Sección Soporte Apple -->
+
+    <section class="soporte-background align-items-center justify-content-center text-center">
+
+        <!-- Título -->
+        <div class="mt-2 pt-5">
+            <h2>Soporte Apple</h2>
+        </div>
+
+        <!-- Equipos (iPhone, MacBook, Apple Watch) -->
+        <div class="container-fluid py-5 mx-auto">
+            <div class="d-flex justify-content-center gap-5 cards-container">
+
+                <div class="card text-center" style="width: 8rem; border: none; background: none;">
+                    <img src="./assets/soporte-iphone.png" alt="iPhone" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <p class="card-text">iPhone</p>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 10rem; border: none; background: none;">
+                    <img src="./assets/soporte-macbook.png" alt="MacBook" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <p class="card-text">MacBook</p>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 8rem; border: none; background: none;">
+                    <img src="./assets/soporte-applewatch.png" alt="Apple Watch" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <p class="card-text">Watch</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Boton Contactanos -->
+        <div class="d-flex justify-content-center pb-5">
+            <a href="./pages/contacto.html" class="btn btn-outline-secondary" role="button">Contactanos</a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+
+    <section class="d-flex flex-column flex-md-row align-items-center text-center mt-2">
+
+        <!-- Servicio Técnico -->
+        <div class="col row background-services1 pt-2">
+            <div class="container col ms-1">
+                <img src="./assets/iphonebattery-background2.png" width="230" height="383" alt="Tip Battery">
+            </div>
+
+            <div class="col d-flex flex-column justify-content-center">
+                <h2>Nuestros consejos</h2>
+                <p>Enterate cómo cuidar tu batería</p>
+                <div class="d-flex justify-content-center pb-5">
+                    <a href="./pages/consejosTecnicos.html" class="btn btn-outline-secondary" role="button">Ver más</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!-- Venta Equipos -->
+
+        <div class="col row background-services2 pt-2">
+
+            <div class="col d-flex flex-column justify-content-center">
+                <h2>Somos vendedores</h2>
+                <p>Equipos sellados y usados</p>
+                <div class="d-flex justify-content-center pb-5">
+                    <a href="./pages/ventaEquipos.html" class="btn btn-outline-secondary" role="button">Enterate acá</a>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-end">
+                <img src="./assets/venta-iphone2.png" width="250" height="383" alt="Venta iPhone">
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-background pt-5 mt-2">
+
+        <div class="row">
+
+            <div class="col-12 col-md-7 ms-md-5 d-flex flex-column align-items-center align-items-md-start">
+
+                <h2>Care for your iPhone</h2>
+
+                <div class="mb-3">
+                    <a class="h4 bi bi-instagram me-2" href="https://www.instagram.com/onlyappleservice?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                    <a class="h4 bi bi-whatsapp" href="https://wa.me/541165875467" target="_blank"></a>
+                </div>
+
+                <a href="./pages/sobreNosotros.html" role="button" class="btn btn-footer btn-sm px-4">Sobre nosotros</a>
+
+            </div>
+
+
+            <div class="col-2 d-none d-md-block">
+
+                <h6><strong>SERVICIOS</strong></h6>
+                <ul class="list-unstyled">
+                    <li><a href="./pages/servicioTecnico.html">Servicio Técnico</a></li>
+                    <li><a href="./pages/ventaEquipos.html">Venta Equipos</a></li>
+                    <li><a href="./pages/ventaAccesorios.html">Venta Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="col-2 d-none d-md-block">
+                <h6><strong>CONTACTANOS</strong></h6>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:onlyappleservice@gmail.com" target="_blank">E-mail</a></li>
+                    <li><a href="https://wa.me/541165875467" target="_blank">Celular</a></li>
+                    <li><a href="https://maps.app.goo.gl/of2u7S42WYwgmCbf6"target="_blank">Ubicanos</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="privacy-footer">© 2025 Desiree Moya - CODERHOUSE</p>
+        
+    </footer>
+
+    <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
