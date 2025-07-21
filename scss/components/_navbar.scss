@@ -1,0 +1,16 @@
+nav{
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: #808080;
+            }
+        }
+    }
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none;
+}

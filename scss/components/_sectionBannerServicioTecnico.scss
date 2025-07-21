@@ -1,0 +1,18 @@
+.bg-main{
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 990px) {
+  .containerBannerST {
+    background: url(../assets/img-cover-presentacion.png) no-repeat center center;
+    background-size: cover;
+    height: 50vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+}
+
+
