@@ -11,17 +11,43 @@ nav {
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-nav ul li a {
-  text-decoration: none;
-  color: #808080;
-}
 
 .nav-link.dropdown-toggle::after {
   display: none;
 }
 
-.h4 {
+.bi {
+  color: #808080;
+}
+
+footer h4 {
+  color: #808080;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.btn-dark {
+  background-color: #cecece;
+  border: none;
   color: #4d4d4d;
+  font-weight: bold;
+}
+
+.footer-background {
+  background-image: url(../assets/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 25rem;
+}
+
+.privacy-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 7rem;
 }
 
 .form-control {
@@ -47,7 +73,7 @@ nav ul li a {
 }
 
 .bg-main {
-  background-color: #f9f9f9;
+  background-color: #F5F5F7;
 }
 
 @media (max-width: 990px) {
@@ -96,7 +122,97 @@ nav ul li a {
 }
 
 .bg-secciones {
-  background-color: #F2F2F2;
+  background-color: #F5F5F7;
+}
+
+.img-fluid {
+  width: auto;
+}
+
+.bg-accesorios {
+  background-image: url(../assets/main-accesorios.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+
+.rounded-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-img img {
+  width: 60%;
+  height: auto;
+}
+
+.rounded-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.category-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.colorBanner-h2 {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.bannerSeba-sobreNosotros {
+  background-image: url(../assets/bannerSeba-sobreNosotros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.banner-sobreNosotros {
+  width: 100%;
+}
+
+.bg-Equipo {
+  background-color: #f9f9f9;
+}
+
+.text-miembros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.text-miembros p {
+  margin-bottom: 0%;
+}
+
+@media (max-width: 990px) {
+  .col-texto {
+    background: url(../assets/img-cover-presentacion.png) no-repeat center center;
+    background-size: cover;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .bannerSeba-sobreNosotros {
+    background-image: url(../assets/bannerSinSeba-sobreNosotros.png);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

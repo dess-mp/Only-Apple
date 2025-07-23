@@ -1,0 +1,6 @@
+@mixin btn-color($bg-color, $text-color) {
+    background-color: $bg-color;
+    border: none;
+    color: $text-color;
+    font-weight: bold;
+}

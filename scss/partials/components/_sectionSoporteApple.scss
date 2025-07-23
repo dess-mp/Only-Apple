@@ -1,0 +1,35 @@
+@use "../utilities/variables";
+
+
+.soporte-background {
+  background: variables.$gradient-soft-grey;
+}
+
+.card:hover{
+    border-color: variables.$border-color-form;
+    box-shadow: 0 0 5px #ccc;
+    transition: variables.$card-hover;
+    outline: none;
+    cursor: pointer;
+}
+
+.active-card {
+  background-color: #6c757d;
+  border-color: #5a6268;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: white;
+}
+
+.cards-container:hover .card {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.cards-container .card:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.container-fluid{
+    padding-right: 0;
+}

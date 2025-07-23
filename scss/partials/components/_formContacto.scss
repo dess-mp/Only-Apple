@@ -1,0 +1,24 @@
+@use "../utilities/variables";
+@import "../utilities/mixins";
+
+.form-control {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid variables.$border-color-form;
+
+  &:focus,
+  &:hover {
+    border-color: variables.$border-color-form;
+    box-shadow: 0 0 5px variables.$border-color-form;
+    outline: none;
+  }
+
+}
+
+.form-label{
+  font-weight: bold;
+  color: #8c8b8b;
+}
+
+.btn-dark{
+  @include btn-color(#cecece, #4d4d4d);
+}

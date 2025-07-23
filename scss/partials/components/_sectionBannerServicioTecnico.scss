@@ -1,0 +1,20 @@
+@use "../utilities/variables";
+
+.bg-main{
+  background-color: variables.$bg-color;
+}
+
+@media (max-width: 990px) {
+  .containerBannerST {
+    background: url(../assets/img-cover-presentacion.png) no-repeat center center;
+    background-size: cover;
+    height: 50vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+}
+
+
