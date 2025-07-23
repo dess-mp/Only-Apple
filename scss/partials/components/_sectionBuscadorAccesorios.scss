@@ -1,0 +1,20 @@
+@use "circulitos";
+.rounded-img {
+    @extend %circulitos;
+}
+
+.rounded-img img {
+    width: 60%;
+    height: auto;
+}
+
+.rounded-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.category-label {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}

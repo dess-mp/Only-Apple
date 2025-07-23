@@ -1,0 +1,34 @@
+@import "../utilities/mixins";
+
+footer{
+    h4{
+        color: #808080;
+    }
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: #808080; 
+            }
+        }
+    }
+}
+
+.btn-dark{
+    @include btn-color(#cecece, #4d4d4d);
+}
+
+.footer-background {
+    background-image: url(../assets/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 25rem;
+}
+
+.privacy-footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 7rem;
+}

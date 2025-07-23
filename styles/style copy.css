@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    margin-top: 3.125rem;
+}
+
+nav{
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    width: 100%;
+}
+
+a,i{
+    text-decoration: none;
+    color: #808080;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border-color: #ccc;
+  box-shadow: 0 0 5px #ccc;
+  outline: none;
+}
+
+.h4{
+    color: #4d4d4d;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.bg-main{
+    background-color: #f9f9f9;
+}
+
+.soporte-background {
+    background-image: url(../assets/soporte-background.png);
+    background-size: cover;
+    width: 100%;
+}
+
+.background-services1 {
+  background-color: #f5f5f7;
+  margin-right: 20px;
+}
+
+.background-services2 {
+  background-color: #f5f5f7;
+}
+
+.btn-footer{
+    background-color: #cecece;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+.footer-background {
+    background-image: url(../assets/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 25rem;
+}
+
+.privacy-footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 7rem;
+}
+
+.colorBanner-h2{
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.bannerSeba-sobreNosotros{
+    background-image: url(../assets/bannerSeba-sobreNosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.banner-sobreNosotros{
+    width: 100%;
+}
+
+.bg-Equipo{
+    background-color: #f9f9f9;
+}
+
+.text-miembros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.text-miembros p{
+    margin-bottom: 0%;
+}
+
+.card:hover{
+    border-color: #ccc;
+    box-shadow: 0 0 5px #ccc;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+.active-card {
+  background-color: #6c757d;
+  border-color: #5a6268;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: white;
+}
+
+.cards-container:hover .card {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.cards-container .card:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.bg-presupuesto{
+    background-image: url(../assets/bg-presupuesto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-accesorios{
+    background-image: url(../assets/main-accesorios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.rounded-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.rounded-img img {
+    width: 60%;
+    height: auto;
+}
+
+.rounded-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.category-label {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .footer-background {
+    width: auto;
+    height: 20rem;
+    background-position: center bottom;
+  }
+  .privacy-footer{
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 990px) {
+    .col-texto {
+        background: url(../assets/img-cover-presentacion.png) no-repeat center center;
+        background-size: cover;
+        height: auto;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .bannerSeba-sobreNosotros{
+        background-image: url(../assets/bannerSinSeba-sobreNosotros.png);
+    }
+
+}

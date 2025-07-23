@@ -1,0 +1,53 @@
+.colorBanner-h2{
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.bannerSeba-sobreNosotros{
+    background-image: url(../assets/bannerSeba-sobreNosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.banner-sobreNosotros{
+    width: 100%;
+}
+
+.bg-Equipo{
+    background-color: #f9f9f9;
+}
+
+.text-miembros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.text-miembros p{
+    margin-bottom: 0%;
+}
+
+@media (max-width: 990px) {
+    .col-texto {
+        background: url(../assets/img-cover-presentacion.png) no-repeat center center;
+        background-size: cover;
+        height: auto;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .bannerSeba-sobreNosotros{
+        background-image: url(../assets/bannerSinSeba-sobreNosotros.png);
+    }
+
+}
