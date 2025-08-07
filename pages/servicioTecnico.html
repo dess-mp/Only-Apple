@@ -78,89 +78,90 @@
     </header>
 
 
+    <main>
+        <section class="soporte-background align-items-center justify-content-center text-center">
 
-    <section class="soporte-background align-items-center justify-content-center text-center">
-
-        <!-- Título -->
-        <div class="mt-5 pt-5 fw-bold">
-            <h2>Presupuesta tu arreglo</h2>
-        </div>
-
-        <!-- Equipos (iPhone, MacBook, Apple Watch) -->
-        <div class="container-fluid pt-3 pb-2 mx-auto">
-            <div class="d-flex justify-content-center gap-5 cards-container">
-
-                <div class="card text-center" style="width: 8rem;border: none; background: none;">
-                    <img src="../assets/soporte-iphone.png" alt="iPhone" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
-                    <div class="card-body p-2">
-                        <p class="card-text">iPhone</p>
-                    </div>
-                </div>
-
-                <div class="card text-center" style="width: 10rem; border: none; background: none;">
-                    <img src="../assets/soporte-macbook.png" alt="MacBook" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
-                    <div class="card-body p-2">
-                        <p class="card-text">MacBook</p>
-                    </div>
-                </div>
-
-                <div class="card text-center" style="width: 8rem; border: none; background: none;">
-                    <img src="../assets/soporte-applewatch.png" alt="Apple Watch" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
-                    <div class="card-body p-2">
-                        <p class="card-text">Watch</p>
-                    </div>
-                </div>
-
+            <!-- Título -->
+            <div class="mt-5 pt-5 fw-bold">
+                <h2>Presupuesta tu arreglo</h2>
             </div>
-        </div>
-    
 
-        <!-- Sección Presupuesto -->
+            <!-- Equipos (iPhone, MacBook, Apple Watch) -->
+            <div class="container-fluid pt-3 pb-2 mx-auto">
+                <div class="d-flex justify-content-center gap-5 cards-container">
 
-        <div class="container mb-2 py-5">
+                    <div class="card text-center" style="width: 8rem;border: none; background: none;">
+                        <img src="../assets/soporte-iphone.png" alt="iPhone" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                        <div class="card-body p-2">
+                            <p class="card-text">iPhone</p>
+                        </div>
+                    </div>
 
-            <div class="row justify-content-center">
+                    <div class="card text-center" style="width: 10rem; border: none; background: none;">
+                        <img src="../assets/soporte-macbook.png" alt="MacBook" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                        <div class="card-body p-2">
+                            <p class="card-text">MacBook</p>
+                        </div>
+                    </div>
 
-                <!-- Equipo + Soporte -->
+                    <div class="card text-center" style="width: 8rem; border: none; background: none;">
+                        <img src="../assets/soporte-applewatch.png" alt="Apple Watch" class="card-img-top mx-auto mt-3" style="height: 80px; object-fit: contain;">
+                        <div class="card-body p-2">
+                            <p class="card-text">Watch</p>
+                        </div>
+                    </div>
 
-                <div class="col-12 col-md-6 mb-4 gap-5">
-
-                    <!-- Equipo -->
-                    <input class="form-control mb-3" list="datalistEquipo" id="equipoSeleccionado" placeholder="Ingrese su modelo...">
-                    <datalist id="datalistEquipo">
-                        <option value="iPhone 14 Pro Max">
-                        <option value="iPhone 13">
-                        <option value="iPhone 12">
-                        <option value="iPhone 11">
-                        <option value="iPhone SE">
-                    </datalist>
-
-                    <!-- Soporte -->
-                    <input class="form-control mb-3" list="datalistSoporte" id="soporteSeleccionado" placeholder="Ingrese su reparación...">
-                    <datalist id="datalistSoporte">
-                        <option value="Cambio de pantalla">
-                        <option value="Cambio de batería">
-                        <option value="Reparación de cámara">
-                        <option value="Reemplazo de pin de carga">
-                        <option value="Reparación de placa base">
-                    </datalist>
-
-                    <!-- Boton Presupuestar -->
-                    <button class="row btn btn-dark btn-lg">Presupuestar</button>
                 </div>
+            </div>
+        
 
-                <!-- Presupuesto -->
-                <div class="col-12 col-md-6 rounded text-center d-grid align-items-center justify-content-center border border-rounded">
-                    <div class="container row justify-content-center">
-                        <div class="col-10">
-                            <h3 class="text-center">Presupuesto</h3>
-                            <p class="text-center">Aquí se mostrará el presupuesto estimado para la reparación de su equipo.</p>
+            <!-- Sección Presupuesto -->
+
+            <div class="container mb-2 py-5">
+
+                <div class="row justify-content-center">
+
+                    <!-- Equipo + Soporte -->
+
+                    <div class="col-12 col-md-6 mb-4 gap-5">
+
+                        <!-- Equipo -->
+                        <input class="form-control mb-3" list="datalistEquipo" id="equipoSeleccionado" placeholder="Ingrese su modelo...">
+                        <datalist id="datalistEquipo">
+                            <option value="iPhone 14 Pro Max">
+                            <option value="iPhone 13">
+                            <option value="iPhone 12">
+                            <option value="iPhone 11">
+                            <option value="iPhone SE">
+                        </datalist>
+
+                        <!-- Soporte -->
+                        <input class="form-control mb-3" list="datalistSoporte" id="soporteSeleccionado" placeholder="Ingrese su reparación...">
+                        <datalist id="datalistSoporte">
+                            <option value="Cambio de pantalla">
+                            <option value="Cambio de batería">
+                            <option value="Reparación de cámara">
+                            <option value="Reemplazo de pin de carga">
+                            <option value="Reparación de placa base">
+                        </datalist>
+
+                        <!-- Boton Presupuestar -->
+                        <button class="row btn btn-dark btn-lg">Presupuestar</button>
+                    </div>
+
+                    <!-- Presupuesto -->
+                    <div class="col-12 col-md-6 rounded text-center d-grid align-items-center justify-content-center border border-rounded">
+                        <div class="container row justify-content-center">
+                            <div class="col-10">
+                                <h3 class="text-center">Presupuesto</h3>
+                                <p class="text-center">Aquí se mostrará el presupuesto estimado para la reparación de su equipo.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer-background pt-5 mt-2">
 

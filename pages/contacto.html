@@ -77,37 +77,38 @@
         </nav>
     </header>
 
-    <div class="container py-5">
-        <h2 class="my-5 text-center">Envianos un mensaje!</h2>
-        <form>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control form-hover" placeholder="Tu nombre" required>
+    <main>
+        <div class="container py-5">
+            <h2 class="my-5 text-center">Envianos un mensaje!</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control form-hover" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control form-hover" placeholder="tu@email.com" required>
+                    </div>
                 </div>
 
-                <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control form-hover" placeholder="tu@email.com" required>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control form-hover" placeholder="Consulta sobre productos, reparaciones, etc." required>
                 </div>
-            </div>
 
-            <div class="mb-3">
-                <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control form-hover" placeholder="Consulta sobre productos, reparaciones, etc." required>
-            </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control form-hover" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                </div>
 
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control form-hover" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
-            </div>
-
-            <div class="text-end">
-                <button type="submit" class="btn btn-dark btn-sm px-4">Enviar</button>
-            </div>
-        </form>
-    </div>
-
+                <div class="text-end">
+                    <button type="submit" class="btn btn-dark btn-sm px-4">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
 
     <footer class="footer-background pt-5 mt-2">
 
