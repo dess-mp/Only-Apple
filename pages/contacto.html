@@ -23,11 +23,11 @@
 
 </head>
 <body>
-    <header class="fixed-top">
+    <header>
 
         <!-- Navbar -->
 
-        <nav class="container-fluid text-center navbar">
+        <nav class="container-fluid text-center navbar fixed-top">
             <div class="container-fluid row">
 
                 <!-- Boton Desplegable -->
@@ -77,78 +77,81 @@
         </nav>
     </header>
 
-    <div class="container py-5">
-        <h2 class="my-5 text-center">Envianos un mensaje!</h2>
-        <form>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control form-hover" placeholder="Tu nombre" required>
+    <main>
+        <div class="container py-5">
+            <h2 class="my-5 text-center">Envianos un mensaje!</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control form-hover" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control form-hover" placeholder="tu@email.com" required>
+                    </div>
                 </div>
-
-                <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control form-hover" placeholder="tu@email.com" required>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control form-hover" placeholder="Consulta sobre productos, reparaciones, etc." required>
-            </div>
-
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control form-hover" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
-            </div>
-
-            <div class="text-end">
-                <button type="submit" class="btn btn-dark btn-sm px-4">Enviar</button>
-            </div>
-        </form>
-    </div>
-
-
-    <footer class="footer-background pt-5 mt-2">
-
-        <div class="row">
-
-            <div class="col-12 col-md-7 ms-md-5 d-flex flex-column align-items-center align-items-md-start">
-
-                <h2>Care for your iPhone</h2>
 
                 <div class="mb-3">
-                    <a class="h4 bi bi-instagram me-2" href="https://www.instagram.com/onlyappleservice?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
-                    <a class="h4 bi bi-whatsapp" href="https://wa.me/541165875467" target="_blank"></a>
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control form-hover" placeholder="Consulta sobre productos, reparaciones, etc." required>
                 </div>
 
-                <a href="./sobreNosotros.html" role="button" class="btn btn-dark btn-sm px-4">Sobre nosotros</a>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control form-hover" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                </div>
 
-            </div>
-
-
-            <div class="col-2 d-none d-md-block">
-
-                <h6><strong>SERVICIOS</strong></h6>
-                <ul class="list-unstyled">
-                    <li><a href="./servicioTecnico.html">Servicio Técnico</a></li>
-                    <li><a href="./ventaEquipos.html">Venta Equipos</a></li>
-                    <li><a href="./ventaAccesorios.html">Venta Accesorios</a></li>
-                </ul>
-            </div>
-
-            <div class="col-2 d-none d-md-block">
-                <h6><strong>CONTACTANOS</strong></h6>
-                <ul class="list-unstyled">
-                    <li><a href="mailto:onlyappleservice@gmail.com" target="_blank">E-mail</a></li>
-                    <li><a href="https://wa.me/541165875467" target="_blank">Celular</a></li>
-                    <li><a href="https://maps.app.goo.gl/of2u7S42WYwgmCbf6"target="_blank">Ubicanos</a></li>
-                </ul>
-            </div>
-
+                <div class="text-end">
+                    <button type="submit" class="btn btn-dark btn-sm px-4">Enviar</button>
+                </div>
+            </form>
         </div>
+    </main>
 
-        <p class="privacy-footer">© 2025 Desiree Moya - CODERHOUSE</p>
+    <footer>
+
+        <div class="footer-background pt-5 mt-2">
+
+            <div class="row">
+
+                <div class="col-12 col-md-7 ms-md-5 d-flex flex-column align-items-center align-items-md-start">
+
+                    <h2>Care for your iPhone</h2>
+
+                    <div class="mb-3">
+                        <a class="h4 bi bi-instagram me-2" href="https://www.instagram.com/onlyappleservice?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                        <a class="h4 bi bi-whatsapp" href="https://wa.me/541165875467" target="_blank"></a>
+                    </div>
+
+                    <a href="./sobreNosotros.html" role="button" class="btn btn-dark btn-sm px-4">Sobre nosotros</a>
+
+                </div>
+
+
+                <div class="col-2 d-none d-md-block">
+
+                    <h6><strong>SERVICIOS</strong></h6>
+                    <ul class="list-unstyled">
+                        <li><a href="./servicioTecnico.html">Servicio Técnico</a></li>
+                        <li><a href="./ventaEquipos.html">Venta Equipos</a></li>
+                        <li><a href="./ventaAccesorios.html">Venta Accesorios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 d-none d-md-block">
+                    <h6><strong>CONTACTANOS</strong></h6>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:onlyappleservice@gmail.com" target="_blank">E-mail</a></li>
+                        <li><a href="https://wa.me/541165875467" target="_blank">Celular</a></li>
+                        <li><a href="https://maps.app.goo.gl/of2u7S42WYwgmCbf6"target="_blank">Ubicanos</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <p class="privacy-footer">© 2025 Desiree Moya - CODERHOUSE</p>
+        </div>
         
     </footer>
 
