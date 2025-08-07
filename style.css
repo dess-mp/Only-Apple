@@ -196,6 +196,11 @@ footer ul li a {
   margin-bottom: 0%;
 }
 
+.rounded-circle {
+  width: 100px;
+  height: 75px;
+}
+
 @media (max-width: 990px) {
   .col-texto {
     background: url(../assets/img-cover-presentacion.png) no-repeat center center;
