@@ -16,9 +16,9 @@ nav {
   display: none;
 }
 
-.bi{
-    color: #414141;
-    text-decoration: none;
+.bi {
+  color: #414141;
+  text-decoration: none;
 }
 
 footer h4 {
@@ -48,7 +48,6 @@ footer ul li a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 7rem;
 }
 
 .form-control {
